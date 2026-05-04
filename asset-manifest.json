@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/task-factory/static/css/main.e54ae832.css",
+    "main.js": "/task-factory/static/js/main.8b8fd2aa.js",
+    "index.html": "/task-factory/index.html",
+    "static/media/iconCheck.svg": "/task-factory/static/media/iconCheck.10c205acb4e43cce11f4bed346580249.svg",
+    "main.e54ae832.css.map": "/task-factory/static/css/main.e54ae832.css.map",
+    "main.8b8fd2aa.js.map": "/task-factory/static/js/main.8b8fd2aa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e54ae832.css",
+    "static/js/main.8b8fd2aa.js"
+  ]
+}
