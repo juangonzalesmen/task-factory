@@ -1,0 +1,35 @@
+.main-container {
+    width: 90%;
+    min-height: 70dvh;
+    position: relative;
+    /* background-color: #e7e7e5; */
+    margin: 45px auto;
+    text-align: center;
+}
+
+.noInfo-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-container img {
+    background: #f1f0eb;
+    /* background: #d1caa4; */
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #e7e7e5;
+}
+
+.main-container .main-title {
+    font-size: 0.9rem;
+    margin: 10px 0 0 0;
+}
+
+.main-container .main-subtitle {
+    font-size: 0.8rem;
+    color: #6B6B6B;
+    font-family: "DM sans", sans-serif;
+    margin: 5px 0;
+}

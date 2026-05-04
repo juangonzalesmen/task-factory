@@ -1,0 +1,20 @@
+.inputSearch-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.inputSearch {
+    width: 100%;
+    background: #f1f0eb;
+    padding: 10px;
+    border: 2px solid #e7e7e5;
+    border-radius: 10px;
+    font-family: "DM sans", sans-serif;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.inputSearch:focus {
+    outline: none;
+    background: #ffffff;
+}

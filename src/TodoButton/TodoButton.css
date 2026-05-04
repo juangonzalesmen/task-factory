@@ -1,0 +1,29 @@
+.btn-nuevTarea {
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    border: 0.5px solid #E8E8E8;
+    border-radius: 10px;
+    padding: 7px 16px;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: "DM Sans", sans-serif;
+    gap: 6px;
+}
+
+.btn-mas {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.btn-nuevTarea:hover {
+    background: #f1f0eb;
+    opacity: 0.82;
+    transform: scale(0.98);
+}
+
+.btn-nuevTarea:active {
+    background: #E8E8E8;
+    transform: scale(0.95);
+}

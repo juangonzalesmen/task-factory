@@ -1,0 +1,137 @@
+.task-container {
+  display: flex;
+  position: relative;
+  /* justify-content: space-between; */
+  width: 90%;
+  height: auto;
+  padding: 0 15px;
+  margin: 35px auto;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  align-items: center;
+  box-sizing: border-box;
+  gap: 5px;
+  font-family: "DM Sans", sans-serif;
+  transition:
+    border-color 0.2s,
+    background 0.2s,
+    transform 0.12s;
+
+  animation: fadeOut 0.3s ease both;
+}
+
+.task-container .checkmark {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #d5d4d4;
+  border-radius: 7px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  background-color: white;
+}
+
+.task-container:hover {
+  background: #f1f0eb;
+  cursor: pointer;
+  /* box-sizing: border-box; */
+}
+
+.task-container .btn-delete {
+  display: none;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.68rem;
+}
+
+.task-container .task-container-actions {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  position: absolute;
+  right: 15px;
+}
+
+.task-container:hover .task-container-actions .btn-delete {
+  display: block;
+  border: 1px solid #d5d4d4;
+  border-radius: 5px;
+  padding: 3px 15px;
+}
+
+.task-container .status {
+  display: none;
+}
+
+.task-container .task-container-actions .btn-delete:active {
+  background: #e8e8e8;
+  transform: scale(0.95);
+}
+
+/* Marcado COMPLETADO */
+.task-container input {
+  display: none;
+}
+
+.task-container input:checked ~ p {
+  text-decoration: line-through;
+  color: #3b6d11;
+}
+
+.task-container input:checked ~ .task-container-actions .status {
+  display: block;
+  background: #3b6d11;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 20px;
+  position: absolute;
+  right: 55px;
+  font-size: 0.558rem;
+  font-style: italic;
+}
+
+.task-container input:checked ~ .checkmark {
+  background: #3b6d11;
+  /* background: #2f5d1a; */
+  border-color: #3b6d11;
+}
+
+.task-container input:checked ~ .checkmark::after {
+  content: "✓";
+  color: white;
+  position: relative;
+  left: calc(50% - 6px);
+  /* left: 6px;
+  top: 2px; */
+}
+
+/* fondo verde al completar */
+
+.task-container:has(input:checked) {
+  background: #dfead7;
+  animation: fadeSlideIn 0.3s ease both;
+}
+.task-container:has(input:checked):hover {
+  background: #daeec9;
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

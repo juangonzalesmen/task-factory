@@ -1,0 +1,83 @@
+.skeleton-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.skeleton-container p {
+  font-style: italic;
+  color: gray;
+  font-size: 0.8rem;
+}
+
+.task-skeleton {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 35px;
+  padding: 0 15px;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.task-skeleton .sk {
+  display: inline-block;
+  border: 1px solid #d5d4d4;
+  background: linear-gradient(
+    90deg,
+    #f0f0f0 25%,
+    /* gris base */ #e0e0e0 50%,
+    /* gris más claro (el "brillo") */ #f0f0f0 75% /* gris base de nuevo */
+  );
+  background-size: 600px 100%;
+  animation: shimmer 1.4s infinite linear;
+}
+
+.task-skeleton .check-skeleton {
+  width: 18px;
+  height: 18px;
+  border-radius: 7px;
+}
+
+.task-skeleton .text-skeleton {
+  height: 10px;
+  border-radius: 10px;
+
+}
+
+.task-skeleton .status-skeleton {
+  width: 40px;
+  height: 10px;
+  border-radius: 10px;
+}
+
+.w90 {
+    width: 90%;
+}
+
+.w60 {
+    width: 60%;
+}
+
+.w55 {
+    width: 55%;
+}
+
+.w45 {
+    width: 45%;
+}
+
+.w70 {
+    width: 70%;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -600px 0;
+  }
+  100% {
+    background-position: 600px 0;
+  }
+}
