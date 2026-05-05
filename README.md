@@ -3,7 +3,7 @@
 ¡Hola!
 
 
-La ramma principal de este repositorio contiene el codigo del proyecto "task-factory" hecho en react. también puedes entrar a la web para probar el este proyecto haciendo click aqui.
+La rama principal de este repositorio contiene el código del proyecto "task-factory" hecho en react. También puedes entrar a la web para probar el este proyecto haciendo click aqui.
 
 https://juangonzalesmen.github.io/task-factory/
 
