@@ -3,7 +3,9 @@
 ¡Hola!
 
 
-La ramma principal de este repositorio contiene el codigo del proyecto "task-factory" hecho enreact. tambien puedes entrar a la web para probar el este proyecto haciendo click aqui. https://juangonzalesmen.github.io/task-factory/
+La ramma principal de este repositorio contiene el codigo del proyecto "task-factory" hecho en react. también puedes entrar a la web para probar el este proyecto haciendo click aqui.
+
+https://juangonzalesmen.github.io/task-factory/
 
 
 ## Getting Started with Create React App
